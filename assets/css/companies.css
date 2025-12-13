@@ -1,0 +1,83 @@
+.companies .content .search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.companies .content .search input {
+    width: 60%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #1f4bea;
+    /* Blue border */
+    font-size: 16px;
+}
+
+.companies .content .companies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.companies .content .companies .company-card {
+    background: #f8faff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: 0.3s;
+    border-top: 4px solid #1f4bea;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.companies .content .companies .company-card:active {
+    animation: clickBounce 0.25s ease-out;
+}
+
+@keyframes clickBounce {
+    0% {}
+
+    40% {
+        transform: scale(0.92);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.companies .content .companies .company-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.companies .content .companies .company-card .logo {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.companies .content .companies .company-card h3 {
+    margin-bottom: 10px;
+    color: #1a3ec9;
+    /* darker blue */
+}
+
+.companies .content .companies .company-card p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.companies .content .companies .company-card a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background: #1f4bea;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+    border: 2px solid #1f4bea;
+}
+
+.companies .content .companies .company-card a:hover {
+    background: #18a850;
+    border-color: #18a850;
+}

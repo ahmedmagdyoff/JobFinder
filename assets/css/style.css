@@ -1,0 +1,396 @@
+/* ====================================
+    التنسيقات العامة
+==================================== */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1400px;
+}
+
+.header-content,
+.hero-content,
+.section-container,
+.footer-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ====================================
+    1. تنسيق الهيدر
+==================================== */
+header {
+    width: 100%;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 50;
+}
+
+header .content {
+    margin: auto;
+    display: flex;
+    max-width: 1400px;
+    align-items: center;
+    padding-bottom: 0.1rem;
+    justify-content: space-between;
+}
+
+header .content .logo a h1 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    background-image: linear-gradient(to right, #2563eb, #06b6d4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+header .content .menu nav {
+    display: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+    header .content .menu nav {
+        display: flex;
+    }
+}
+
+header .content .menu nav a {
+    color: #4b5563;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header .content .menu nav a:hover {
+    color: #2563eb;
+}
+
+header .content .login-btn {
+    text-decoration: none;
+    background-image: linear-gradient(to right, #2563eb, #06b6d4);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s;
+}
+
+header .content .login-btn:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+
+/* ====================================
+    2. تنسيق القسم الترويجي (Hero Section)
+==================================== */
+.hero-section {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 70%, #06b6d4 100%);
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    color: white;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    color: #bfdbfe;
+}
+
+@media (min-width: 768px) {
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+.search-bar-container {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .search-bar {
+        flex-direction: row;
+    }
+}
+
+.search-input {
+    flex: 1 1 0%;
+    padding: 1.25rem 2rem;
+    font-size: 1.125rem;
+    color: #1f2937;
+    border-radius: 0.75rem;
+    border: none;
+    outline: none;
+}
+
+/* تنسيق زر البحث */
+.search-btn {
+    background: #10b981;
+    color: white;
+    padding: 1.25rem 3.5rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.search-btn:hover {
+    background: #059669;
+}
+
+.stats-bar {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.125rem;
+    color: #bfdbfe;
+}
+
+.separator {
+    font-weight: bold;
+}
+
+/* ====================================
+    3. تنسيق قسم الوظائف الحديثة
+==================================== */
+.latest-jobs-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #4b5563;
+    font-size: 1.125rem;
+    margin-bottom: 3.5rem;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .jobs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .jobs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.job-card {
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.job-card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.job-type {
+    background-image: linear-gradient(to right, #f3e8ff, #fce7f3);
+    color: #7c3aed;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 700;
+}
+
+.job-time {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.job-company-location {
+    color: #2563eb;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+
+.job-tag {
+    padding: 0.5rem 1rem;
+    background: #f3f4f6;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+/* تنسيق زر التقديم على الوظيفة */
+.apply-btn {
+    width: 100%;
+    background-image: linear-gradient(to right, #2563eb, #06b6d4);
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.apply-btn:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* ====================================
+    4. تنسيق الفوتر (Footer)
+==================================== */
+.main-footer {
+    background: #111827;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.footer-logo {
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 1.25rem;
+    color: #22d3ee;
+}
+
+.footer-description {
+    color: #d1d5db;
+    line-height: 1.625;
+}
+
+.footer-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.copyright-bar {
+    text-align: center;
+    color: #6b7280;
+    padding-top: 2.5rem;
+    border-top: 1px solid #1f2937;
+}
