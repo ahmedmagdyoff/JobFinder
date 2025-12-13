@@ -24,10 +24,10 @@
             <div class="menu">
                 <nav>
                     <a href="/">الرئيسية</a>
-                    <a href="jobs.php">الوظائف</a>
-                    <a href="companies.php">الشركات</a>
-                    <a href="blog.php">المدونة</a>
-                    <a href="contact.php">اتصل بنا</a>
+                    <a href="jobs">الوظائف</a>
+                    <a href="companies">الشركات</a>
+                    <a href="blog">المدونة</a>
+                    <a href="contact">اتصل بنا</a>
                 </nav>
             </div>
             <div class="login">
