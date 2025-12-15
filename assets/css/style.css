@@ -311,6 +311,8 @@ header .content .login-btn:hover {
 
 /* تنسيق زر التقديم على الوظيفة */
 .apply-btn {
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-image: linear-gradient(to right, #2563eb, #06b6d4);
     color: white;
