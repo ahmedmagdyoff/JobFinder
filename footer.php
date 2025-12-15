@@ -34,6 +34,10 @@
     <div class="copyright-bar">2025 JobFinder</div>
 </footer>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="assets/js/register.js"></script>
+<script src="assets/js/contact.js"></script>
+
 </body>
 
 </html>

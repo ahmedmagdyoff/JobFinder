@@ -8,7 +8,10 @@
     <title>JobFinder - <?= $title ?></title>
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/login.css" rel="stylesheet" />
+    <link href="assets/css/register.css" rel="stylesheet" />
+    <link href="assets/css/blog.css" rel="stylesheet" />
     <link href="assets/css/companies.css" rel="stylesheet" />
+    <link href="assets/css/contact.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 </head>

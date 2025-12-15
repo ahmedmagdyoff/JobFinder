@@ -10,7 +10,7 @@ include "header.php"; ?>
     <section class="articles-grid">
 
       <article class="article-card">
-        <div class="article-image" style="background-image: url('http://googleusercontent.com/image_collection/image_retrieval/14028283370662369535_0');"></div>
+        <div class="article-image" style="background-image: url('https://googleusercontent.com/image_collection/image_retrieval/14028283370662369535_0');"></div>
         <div class="article-body">
           <span class="category-tag">نصائح مهنية</span>
           <h2>أهم 5 مهارات يطلبها سوق العمل في 2025</h2>
@@ -20,7 +20,7 @@ include "header.php"; ?>
       </article>
 
       <article class="article-card">
-        <div class="article-image" style="background-image: url('http://googleusercontent.com/image_collection/image_retrieval/4750196589634921928_0');"></div>
+        <div class="article-image" style="background-image: url('https://googleusercontent.com/image_collection/image_retrieval/4750196589634921928_0');"></div>
         <div class="article-body">
           <span class="category-tag">مقابلات العمل</span>
           <h2>كيف تجيب على أصعب أسئلة المقابلات بثقة؟</h2>
@@ -30,7 +30,7 @@ include "header.php"; ?>
       </article>
 
       <article class="article-card">
-        <div class="article-image" style="background-image: url('http://googleusercontent.com/image_collection/image_retrieval/11654941042789535167_0');"></div>
+        <div class="article-image" style="background-image: url('https://googleusercontent.com/image_collection/image_retrieval/11654941042789535167_0');"></div>
         <div class="article-body">
           <span class="category-tag">السيرة الذاتية</span>
           <h2>أخطاء شائعة يجب تجنبها عند كتابة CV احترافي</h2>
