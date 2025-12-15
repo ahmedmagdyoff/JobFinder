@@ -1,4 +1,9 @@
-<?php $title = "أفضل فرص العمل في العالم العربي";
+<?php $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+if ($uri && file_exists(__DIR__ . "/$uri.php")) {
+    include "$uri.php";
+    exit;
+}
+$title = "أفضل فرص العمل في العالم العربي";
 include "header.php"; ?>
 <div class="home">
     <section class="hero-section">
