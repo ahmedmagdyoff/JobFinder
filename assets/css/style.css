@@ -53,6 +53,7 @@ header .content .logo a h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    margin: 1rem 0;
 }
 
 header .content .menu nav {
