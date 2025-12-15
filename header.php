@@ -36,8 +36,5 @@
             <div class="login">
                 <a href="login.php" class="login-btn">تسجيل الدخول</a>
             </div>
-            <div class="login">
-                <a href="login.php" class="login-btn">إنشاء حساب</a>
-            </div>
         </div>
     </header>
