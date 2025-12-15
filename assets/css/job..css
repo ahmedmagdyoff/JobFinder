@@ -1,0 +1,42 @@
+.job-card,
+.details-box {
+    background: #fff;
+    width: 70%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h2 span {
+    color: #3b6cff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 50px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #5b6cff, #3cc7ff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+    transform: translateY(-3px);
+}
+
+.apply-btn {
+    background: linear-gradient(to right, #5b6cff, #3cc7ff);
+}
+
+.apply-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-3px);
+
+}
