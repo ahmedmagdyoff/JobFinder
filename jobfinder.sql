@@ -3,13 +3,13 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2025 at 11:37 PM
+-- Generation Time: Dec 15, 2025 at 09:53 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
-SET time_zone = "+02:00";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -54,6 +54,7 @@ INSERT INTO `companies` (`id`, `name`, `description`, `logo`) VALUES
 CREATE TABLE `jobs` (
   `id` int(11) NOT NULL,
   `title` varchar(150) DEFAULT NULL,
+  `description` text DEFAULT NULL,
   `company_id` int(11) DEFAULT NULL,
   `location` varchar(100) DEFAULT NULL,
   `job_type` varchar(50) DEFAULT NULL,
@@ -65,8 +66,8 @@ CREATE TABLE `jobs` (
 -- Dumping data for table `jobs`
 --
 
-INSERT INTO `jobs` (`id`, `title`, `company_id`, `location`, `job_type`, `tags`, `created_at`) VALUES
-(1, 'مطور Full Stack', 1, 'القاهرة', 'دوام كامل', 'Laravel,React,MySQL', '2025-12-14 00:22:29');
+INSERT INTO `jobs` (`id`, `title`, `description`, `company_id`, `location`, `job_type`, `tags`, `created_at`) VALUES
+(1, 'مطور Full Stack', 'مسؤول عن تصميم وتنفيذ واجهات المستخدم باستخدام HTML, CSS, JavaScript مع الاهتمام بتجربة المستخدم.', 1, 'القاهرة', 'دوام كامل', 'Laravel,React,MySQL', '2025-12-14 00:22:29');
 
 --
 -- Indexes for dumped tables
