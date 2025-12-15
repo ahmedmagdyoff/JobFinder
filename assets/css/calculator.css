@@ -1,5 +1,11 @@
+.calc-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 96px;
+}
+
 .calculator {
-    width: 330px;
+    width: min-content;
     padding: 20px;
     border-radius: 30px;
     background: #000;
