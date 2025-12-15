@@ -1,58 +1,174 @@
-.login .box {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 40px;
-    border: 2px solid #007bff;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-}
-
-.login .box .header .title {
-    text-align: center;
-}
-
-.login .box .content form {
-    display: flex;
-    gap: 0.75rem;
-    flex-direction: column;
-}
-
-.login .box .content form div {
-    display: flex;
-    gap: 0.25rem;
-    flex-direction: column;
-}
-
-.login .box .content form div label {
-    font-weight: bold;
-}
-
-.login .box .content form div input[type="email"],
-.login .box .content form div input[type="password"] {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1em;
-    border-radius: 0.5rem;
+/* إعدادات عامة */
+* {
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
 }
 
-.login .box .content form input[type="submit"] {
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f8fafc; /* رمادي فاتح جداً */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #334155;
+}
+
+/* حاوية البطاقة */
+.login-container {
+    background: #ffffff;
     width: 100%;
-    color: #fff;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-    padding: 0.75rem;
-    transition: all 0.3s;
-    border-radius: 0.5rem;
-    background-color: #007bff;
+    max-width: 420px;
+    padding: 2.5rem;
+    border-radius: 20px; /* حواف ناعمة زي الصورة */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    margin: 1rem;
 }
 
-.login .box .content form input[type="submit"]:hover {
-    background-color: #0056b3;
+/* الشعار والنص */
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    color: #2563eb; /* الأزرق الأساسي */
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* تنسيق الحقول */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.forgot-pass {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    padding-left: 40px; /* مكان للأيقونة */
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* تأثير التركيز (Focus) - يضيء بالأزرق السماوي */
+input:focus {
+    border-color: #06b6d4;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+/* رسائل الخطأ */
+.error-msg {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+    height: 15px; /* حجز مكان */
+}
+
+/* الزر الأساسي (نفس التدرج الموجود في الصورة) */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 50px; /* دائري بالكامل */
+    background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* الفاصل */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+/* الفوتر */
+.login-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.login-footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* كلاس مساعد للإخفاء */
+.hidden {
+    display: none;
 }

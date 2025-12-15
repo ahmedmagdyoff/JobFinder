@@ -1,0 +1,145 @@
+:root {
+    /* الألوان المستمدة من زر "تسجيل الدخول" */
+    --color-light-blue: #4dc3ff; /* أزرق سماوي/فاتح */
+    --color-dark-blue: #0066cc; /* أزرق أساسي */
+    --color-dark-text: #1a2c42; /* لون نص داكن (كحلي عميق) */
+    --gradient-main: linear-gradient(to right, #4dc3ff, #0066cc);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* خلفية رمادية فاتحة للمدونة */
+    color: var(--color-dark-text);
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* دعم اللغة العربية */
+    text-align: right;
+}
+
+.blog-header {
+    background-color: #fff;
+    padding: 50px 0 30px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.blog-header h1 {
+    color: var(--color-dark-text);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #6c757d;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* تصميم شبكة المقالات (Grid) */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 300px كحد أدنى لحجم البطاقة */
+    gap: 30px;
+}
+
+/* تصميم بطاقة المقال (Article Card) */
+.article-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-body {
+    padding: 20px;
+}
+
+.category-tag {
+    display: inline-block;
+    background: var(--gradient-main);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.article-body h2 {
+    color: var(--color-dark-text);
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    min-height: 40px; /* لتجنب الفراغات في المقالات ذات العناوين القصيرة */
+}
+
+.article-body p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* زر "اقرأ المزيد" بنفس التدرج المطلوب */
+.read-more-btn {
+    display: inline-block;
+    background: none;
+    border: 2px solid;
+    border-image: var(--gradient-main);
+    border-image-slice: 1;
+    color: var(--color-dark-blue);
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    /* تطبيق التدرج كلون للخلفية عند التمرير */
+    background: var(--gradient-main);
+    color: #fff;
+    border: none;
+    padding: 10px 17px; /* زيادة بسيطة في الحجم */
+}
+
+/* زر عرض المزيد أسفل المقالات */
+.load-more-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.load-more-btn {
+    background: var(--gradient-main);
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3); /* ظل أزرق جذاب */
+}
+
+.load-more-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}

@@ -1,0 +1,114 @@
+:root {
+    /* الألوان المستمدة من زر "تسجيل الدخول" */
+    --color-light-blue: #4dc3ff; /* أزرق سماوي/فاتح */
+    --color-dark-blue: #0066cc; /* أزرق أساسي */
+    --color-dark-text: #1a2c42; /* لون نص داكن (كحلي عميق) */
+    --gradient-main: linear-gradient(to right, var(--color-light-blue), var(--color-dark-blue));
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* يفضل استخدام خط عربي جذاب */
+    background-color: #f8f9fa; /* خلفية خفيفة */
+    color: var(--color-dark-text);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--color-dark-text);
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* تصميم أيقونات الاتصال السريع */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* للسماح بالعناصر بالانتقال لسطر جديد على الشاشات الصغيرة */
+}
+
+.contact-card {
+    text-decoration: none;
+    color: var(--color-dark-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 120px;
+}
+
+.contact-card i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    /* تطبيق التدرج اللوني على الأيقونات */
+    background: var(--gradient-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-inline-color: transparent;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* تصميم نموذج الاتصال */
+.contact-form-section {
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.contact-form-section h2 {
+    color: var(--color-dark-text);
+    margin-bottom: 25px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* زر الإرسال بنفس تدرج "تسجيل الدخول" */
+.submit-button {
+    background: var(--gradient-main);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
