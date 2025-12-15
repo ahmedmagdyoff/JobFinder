@@ -6,16 +6,6 @@
     --gradient-main: linear-gradient(to right, #4dc3ff, #0066cc);
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5; /* خلفية رمادية فاتحة للمدونة */
-    color: var(--color-dark-text);
-    margin: 0;
-    padding: 0;
-    direction: rtl; /* دعم اللغة العربية */
-    text-align: right;
-}
-
 .blog-header {
     background-color: #fff;
     padding: 50px 0 30px;

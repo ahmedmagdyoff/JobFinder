@@ -5,16 +5,6 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Cairo', sans-serif;
-    background-color: #f8fafc; /* رمادي فاتح جداً */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #334155;
-}
-
 /* حاوية البطاقة */
 .login-container {
     background: #ffffff;

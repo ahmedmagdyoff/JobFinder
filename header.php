@@ -8,7 +8,6 @@
     <title>JobFinder - <?= $title ?></title>
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/login.css" rel="stylesheet" />
-    <link href="assets/css/register.css" rel="stylesheet" />
     <link href="assets/css/blog.css" rel="stylesheet" />
     <link href="assets/css/jobs.css" rel="stylesheet" />
     <link href="assets/css/companies.css" rel="stylesheet" />

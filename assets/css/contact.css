@@ -6,15 +6,6 @@
     --gradient-main: linear-gradient(to right, var(--color-light-blue), var(--color-dark-blue));
 }
 
-body {
-    font-family: 'Arial', sans-serif; /* يفضل استخدام خط عربي جذاب */
-    background-color: #f8f9fa; /* خلفية خفيفة */
-    color: var(--color-dark-text);
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
-
 .contact-container {
     max-width: 900px;
     margin: 40px auto;

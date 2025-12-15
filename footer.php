@@ -35,7 +35,6 @@
 </footer>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/login.js"></script>
-<script src="assets/js/register.js"></script>
 <script src="assets/js/jobs.js"></script>
 <script src="assets/js/contact.js"></script>
 

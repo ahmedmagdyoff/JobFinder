@@ -1,13 +1,3 @@
-/* تنسيقات أساسية ومحاذاة للغة العربية */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    text-align: right; /* محاذاة النص لليمين للغة العربية */
-}
-
 /* تنسيق رأس الصفحة */
 .page-header {
     /* استخدام نفس التدرج اللوني للزر */
