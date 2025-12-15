@@ -1,0 +1,137 @@
+/* تنسيقات أساسية ومحاذاة للغة العربية */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: right; /* محاذاة النص لليمين للغة العربية */
+}
+
+/* تنسيق رأس الصفحة */
+.page-header {
+    /* استخدام نفس التدرج اللوني للزر */
+    background: linear-gradient(to right, #ffffff, #ffffff); 
+    
+    color: rgb(0, 0, 0);
+    padding: 30px 0; /* زيادة الـ Padding قليلاً */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* إضافة ظل مشابه لظل الزر */
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.8em; /* تكبير حجم الخط ليكون أكثر وضوحاً */
+}
+
+
+/* تنسيق حاوية الوظائف */
+.jobs-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 30px;
+}
+
+/* تنسيق بطاقة الوظيفة الواحدة */
+.job-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-right: 5px solid #007bff; /* شريط جانبي لإبراز البطاقة */
+}
+
+.job-title {
+    color: #007bff;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.company, .location {
+    color: #666;
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* تنسيق قسم التفاصيل المخفي */
+.job-details {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+}
+
+.job-details h3 {
+    color: #28a745;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.job-details ul {
+    list-style-type: '👈 '; /* إضافة رمز بسيط لقائمة المتطلبات */
+    padding-right: 20px;
+}
+
+.job-details li {
+    margin-bottom: 8px;
+}
+
+/* إخفاء التفاصيل افتراضياً باستخدام الكلاس */
+.hidden {
+    display: none;
+}
+
+/* تنسيق زر عرض/إخفاء التفاصيل */
+/* تنسيق زر عرض/إخفاء التفاصيل */
+.toggle-details-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 15px;
+    
+    /* --- التعديلات تبدأ هنا --- */
+    
+    /* استخدام التدرج اللوني (Gradient) */
+    background: linear-gradient(to right, #4c66ff, #00c7e2);
+    color: white; /* تغيير لون النص إلى الأبيض ليتناسب مع الخلفية الداكنة */
+    border: none;
+    border-radius: 30px; /* زيادة نصف قطر الحواف لجعله بيضاوياً مثل الصورة */
+    
+    /* إضافة ظل خفيف لجعل الزر بارزاً */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    
+    /* --- التعديلات تنتهي هنا --- */
+    
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: transform 0.2s, box-shadow 0.2s; /* تحسين الانتقالات */
+}
+
+/* تأثير التفاعل عند مرور الماوس (Hover Effect) */
+.toggle-details-btn:hover {
+    /* جعل الزر يرتفع قليلاً عند المرور عليه */
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* لجعل النص داخل الزر يتوسط */
+.toggle-details-btn {
+    text-align: center;
+}
+
+/* استجابة الشاشات الصغيرة (Mobile Responsiveness) */
+@media (max-width: 600px) {
+    .page-header h1 {
+        font-size: 1.8em;
+    }
+
+    .jobs-container {
+        padding: 0 10px;
+    }
+    
+    .job-title {
+        font-size: 1.5em;
+    }
+}
