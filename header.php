@@ -49,7 +49,7 @@ if (isset($_GET['id'])) {
                 </nav>
             </div>
             <div class="login">
-                <a href="login.php" class="login-btn">تسجيل الدخول</a>
+                <a href="login" class="login-btn">تسجيل الدخول</a>
             </div>
         </div>
     </header>
