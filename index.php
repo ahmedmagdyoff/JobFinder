@@ -62,5 +62,39 @@ include "header.php"; ?>
             </div>
         </section>
     </div>
+    <div class="calc-box">
+        <div class="calculator">
+
+            <input type="text" id="display" disabled>
+
+            <div class="buttons">
+                <button class="btn gray">AC</button>
+                <button class="btn gray">%</button>
+                <button class="btn gray">⌫</button>
+                <button class="btn operator">÷</button>
+
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn operator">×</button>
+
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn operator">−</button>
+
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn operator">+</button>
+
+                <button class="btn zero">/</button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn equal">=</button>
+            </div>
+
+        </div>
+    </div>
 </div>
 <?php include "footer.php"; ?>

@@ -38,7 +38,7 @@
 <script src="assets/js/jobs.js"></script>
 <script src="assets/js/job.js"></script>
 <script src="assets/js/contact.js"></script>
-
+<script src="assets/js/calculator.js"></script>
 </body>
 
 </html>
