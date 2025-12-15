@@ -21,10 +21,7 @@ include "header.php"; ?>
         <li>Responsive Design</li>
     </ul>
 
-    <a href="jobs.html" class="btn">رجوع للوظائف</a>
-    <a href="apply.html" class="btn apply-btn">
-        تقديم على الوظيفة
-    </a>
+    <a href="jobs" class="btn">رجوع للوظائف</a>
 
 </div>
 <?php include "footer.php"; ?>

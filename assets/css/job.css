@@ -1,11 +1,14 @@
 .job-card,
 .details-box {
     background: #fff;
-    width: 70%;
     margin: 20px auto;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.details-box {
+    width: 70%;
 }
 
 .job-card h2 span {

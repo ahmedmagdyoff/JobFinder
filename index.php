@@ -54,7 +54,7 @@ include "header.php"; ?>
                                         <span class="job-tag"><?= trim($tag) ?></span>
                                     <?php } ?>
                                 </div>
-                                <button class="apply-btn">تقديم الآن</button>
+                                <a href="job.php?id=<?= $job['id'] ?>" class="apply-btn">تقديم الآن</a>
                             </div>
                         </div>
                     <?php } ?>

@@ -247,6 +247,7 @@ header .content .login-btn:hover {
 }
 
 .job-card {
+    width: 100%;
     background: white;
     border-radius: 1.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
