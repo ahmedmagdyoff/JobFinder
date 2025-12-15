@@ -1,4 +1,17 @@
-<?php require_once "config.php"; ?>
+<?php require_once "config.php";
+$id;
+if (isset($_GET['id'])) {
+    $id = (int) $_GET['id'];
+    $job = mysqli_fetch_assoc(mysqli_query($conn, "
+        SELECT jobs.*, companies.name AS company_name
+        FROM jobs
+        JOIN companies ON jobs.company_id = companies.id
+        WHERE jobs.id = $id
+        LIMIT 1
+        "));
+    $title = $job['title'];
+}
+?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
